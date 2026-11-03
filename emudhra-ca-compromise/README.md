@@ -27,7 +27,8 @@ The article explains the risk and the response, but it does not say attackers we
 |---|---|---|
 | Adversary-in-the-Middle | T1557 | Fake certificates make interception possible |
 | Steal or Forge Authentication Certificates | T1649 | Derived keys allow forged certificates |
-jhbjh## 6. Response steps
+
+6. Response steps
 - **Find:** check which of my systems use or trust certificates from these CAs, including apps, containers and trust stores.
 - **Fix:** replace those certificates with ones from a trusted CA, push updated trust settings, and make sure revoked certificates get blocked.
 - **Hunt:** look through proxy, network and login logs for strange certificate errors, unknown issuers, or sessions that look hijacked.
